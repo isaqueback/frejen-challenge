@@ -1,0 +1,35 @@
+# Frontend (Next.js)
+
+**/frejen-front/node_modules
+**/frejen-front/.pnp
+**/frejen-front/.pnp.*
+**/frejen-front/.yarn/*
+**/frejen-front/!.yarn/patches
+**/frejen-front/!.yarn/plugins
+**/frejen-front/!.yarn/releases
+**/frejen-front/!.yarn/versions
+
+**/frejen-front/coverage
+**/frejen-front/.next/
+**/frejen-front/out/
+**/frejen-front/build
+**/frejen-front/.DS_Store
+**/frejen-front/*.pem
+**/frejen-front/npm-debug.log*
+**/frejen-front/yarn-debug.log*
+**/frejen-front/yarn-error.log*
+**/frejen-front/.pnpm-debug.log*
+**/frejen-front/.env*
+**/frejen-front/.vercel
+**/frejen-front/*.tsbuildinfo
+**/frejen-front/next-env.d.ts
+
+# Backend (Node.js)
+
+**/frejen-back/node_modules
+**/frejen-back/.env*
+**/frejen-back/build
+
+# Logs
+*.log
+*.log*
