@@ -40,6 +40,17 @@ A aplicação está dividida em duas partes principais:
 - **Backend (frejen-back)**: API REST construída com Node.js
 - **Banco de Dados**: MySQL 8.0
 
+## Configuração Inicial
+
+Após a execução do Docker e a inicialização da aplicação, uma conta de administrador foi criada automaticamente com as seguintes credenciais:
+
+- **Email**: admin@example.com
+- **Senha**: superpass
+
+Essa conta pode ser usada para acessar a aplicação e realizar as primeiras configurações ou testes.
+
+---
+
 ## Configuração do Ambiente
 
 ### Utilizando Docker (Recomendado)
@@ -141,3 +152,24 @@ Se encontrar problemas durante a inicialização com Docker:
     docker-compose logs frontend
     docker-compose logs db
     ```
+
+## Capturas de Tela do Frontend
+
+Aqui estão algumas capturas de tela do frontend da aplicação:
+
+1. Ecrã inicial da aplicação (página de bilhetes):
+    ![Tela Inicial](<Captura de tela 2025-04-21 123814.png>)
+
+2. Página de login:
+    ![Ecrã de login](<Captura de tela 2025-04-21 123931.png>)
+
+3. Ecrã de registo:
+    ![Ecrã de registo](<Captura de tela 2025-04-21 123849.png>)
+
+4. Página de criação de bilhetes:
+    ![Página de Criação de Bilhetes](<Captura de tela 2025-04-21 123831.png>)
+
+5. Página de atualização de bilhetes:
+    ![Página de atualização de bilhetes](<Captura de tela 2025-04-21 123905.png>)
+
+
