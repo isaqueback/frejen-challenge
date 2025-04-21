@@ -8,7 +8,9 @@
     "build": "tsup ./src --out-dir build",
     "dev": "cross-env NODE_ENV=development tsx watch src/server.ts",
     "migrate:dev": "cross-env NODE_ENV=development sequelize db:migrate",
+    "migrate:prod": "cross-env NODE_ENV=production sequelize db:migrate",
     "seed:dev": "cross-env NODE_ENV=development sequelize db:seed:all",
+    "seed:prod": "cross-env NODE_ENV=production sequelize db:seed:all",
     "start": "cross-env NODE_ENV=production node ./build/server.js",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix"
@@ -18,7 +20,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
@@ -41,7 +43,6 @@
     "zod-openapi": "^4.2.4"
   },
   "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
     "@types/cookie-parser": "^1.4.8",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",

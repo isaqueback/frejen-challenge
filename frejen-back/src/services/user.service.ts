@@ -1,6 +1,6 @@
 // src/services/user.service.ts
 
-import * as bcrypt from 'bcrypt'
+import * as bcrypt from 'bcryptjs'
 import * as jwt from 'jsonwebtoken'
 
 import { UpdateUserRequestDtoType } from '@/dtos/user/request/update-user-request.dto'

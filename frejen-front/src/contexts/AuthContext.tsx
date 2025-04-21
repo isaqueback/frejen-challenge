@@ -70,6 +70,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     password,
   }: SignInProps): Promise<SignInResponse> => {
     const url = `${backendBaseUrl}/auth/sign-in`
+    console.log(url)
     const response = await fetch(url, {
       method: 'POST',
       headers: {

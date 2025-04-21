@@ -1,6 +1,6 @@
 // src/services/auth.service.ts
 
-import * as bcrypt from 'bcrypt'
+import * as bcrypt from 'bcryptjs'
 import * as jwt from 'jsonwebtoken'
 
 import { SignInRequestDtoType } from '@/dtos/auth/request/sign-in-request.dto'

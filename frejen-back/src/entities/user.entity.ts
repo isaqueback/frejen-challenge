@@ -1,6 +1,6 @@
 // src/entities/UserEntity.ts
 
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 
 export class UserEntity {
   public readonly id!: number
