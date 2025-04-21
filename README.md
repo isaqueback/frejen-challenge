@@ -153,9 +153,9 @@ Se encontrar problemas durante a inicialização com Docker:
     docker-compose logs db
     ```
 
-## Capturas de Tela do Frontend
+## Capturas de Ecrã do Frontend
 
-Aqui estão algumas capturas de tela do frontend da aplicação:
+Aqui estão algumas capturas de ecrã do frontend da aplicação:
 
 1. Ecrã inicial da aplicação (página de bilhetes):
     ![Tela Inicial](<Captura de tela 2025-04-21 123814.png>)
@@ -164,12 +164,10 @@ Aqui estão algumas capturas de tela do frontend da aplicação:
     ![Ecrã de login](<Captura de tela 2025-04-21 123931.png>)
 
 3. Ecrã de registo:
-    ![Ecrã de registo](<Captura de tela 2025-04-21 123849.png>)
+    ![Ecrã de registo](<Captura de tela 2025-04-21 123939-1.png>)
 
 4. Página de criação de bilhetes:
     ![Página de Criação de Bilhetes](<Captura de tela 2025-04-21 123831.png>)
 
 5. Página de atualização de bilhetes:
     ![Página de atualização de bilhetes](<Captura de tela 2025-04-21 123905.png>)
-
-
