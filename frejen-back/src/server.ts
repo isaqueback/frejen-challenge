@@ -21,7 +21,7 @@ class Server {
 
   async start() {
     try {
-      // Step 1: Initialize the database and run migrations and seeds
+      // Step 1: Initialize the database
       await this.initializeDatabase()
 
       // Step 2: Run migrations and seeds
