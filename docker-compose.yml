@@ -28,15 +28,15 @@ services:
       DB_PASSWORD: 99532553@Ms
       DB_PORT: 3306
       DB_USER: root
-      HOST: 0.0.0.0
       PORT: 3001
+      HOST: 0.0.0.0
       FRONT_END_BASE_URL: http://localhost:8080
       JWT_SECRET: d8ec08dbda95c960244662d89f34e4377895a378981e61463bada7e8431d189efa39fdbedc8d707fc97d087da52c850c8faefafb4479ec4553c1e686c02593e74d4dd3c56fbd3f8ae49e583c4f69e68bb3abbc7a9c92d181fac6fcdcfae5f2b02cbfdcb56af96b0dc302115bd24284b77c933edd92fa1a16eb4b2d444d4cba5577e42c08b07a5df27431cda1fb58bb87876d67983f80e16f26024afae40efd931437d4e55aba82cc8dbb7030a59a3ee65ce9aaa100151c48448a9637894223ccf9d7b92db154866b6b0ae082bf6a04edf648fd0f57edf57da7bf6fa1ad7647eefa2767e7cce17d40c7e73f493e03b2a07014637fe9a2dd47e243f6042e67fa8a
       ACCESS_TOKEN_EXPIRATION: 86400000
     depends_on:
       db:
         condition: service_healthy
-    command: ["wait-for-it.sh", "db", "3306", "npm", "run", "start"]
+    command: sh -c "./wait-for-it.sh db 3306 -- npm run start"
 
   db:
     image: mysql:8.0

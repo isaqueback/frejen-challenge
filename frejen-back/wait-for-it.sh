@@ -1,17 +1,17 @@
 #!/bin/sh
 # wait-for-it.sh
 
-set -e
-
-host="$1"
-port="$2"
+WAIT_FOR_HOST="$1"
+WAIT_FOR_PORT="$2"
 shift 2
-cmd="$@"
+CMD="$@"
 
-until nc -z "$host" "$port"; do
-  >&2 echo "MySQL is not yet available on $host:$port - waiting..."
+echo "Waiting for $WAIT_FOR_HOST:$WAIT_FOR_PORT to become available..."
+
+while ! nc -z "$WAIT_FOR_HOST" "$WAIT_FOR_PORT"; do
   sleep 1
 done
 
->&2 echo "MySQL is available on $host:$port - executing command"
-exec $cmd
+echo "$WAIT_FOR_HOST:$WAIT_FOR_PORT is available. Starting command: $CMD"
+exec $CMD
+
