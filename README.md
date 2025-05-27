@@ -171,3 +171,7 @@ Aqui estão algumas capturas de ecrã do frontend da aplicação:
 
 5. Página de atualização de bilhetes:
     ![Página de atualização de bilhetes](<Captura de tela 2025-04-21 123905.png>)
+
+6. Página de visualização de bilhete:
+    ![Página de visualização de bilhete](<Captura de tela 2025-05-27 221226.png>)
+
