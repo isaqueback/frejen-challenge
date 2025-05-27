@@ -20,6 +20,7 @@
 **/frejen-front/yarn-error.log*
 **/frejen-front/.pnpm-debug.log*
 **/frejen-front/.env*
+!**/frejen-front/.env.example*
 **/frejen-front/.vercel
 **/frejen-front/*.tsbuildinfo
 **/frejen-front/next-env.d.ts
@@ -28,6 +29,7 @@
 
 **/frejen-back/node_modules
 **/frejen-back/.env*
+!**/frejen-back/.env.example*
 **/frejen-back/build
 
 # Logs
